@@ -44,7 +44,7 @@ public class IrisClassifier {
         normalizer.fit(allData);
         normalizer.transform(allData);
 
-        SplitTestAndTrain testAndTrain = allData.splitTestAndTrain(0.65);
+        SplitTestAndTrain testAndTrain = allData.splitTestAndTrain(0.75);
         DataSet trainingData = testAndTrain.getTrain();
         DataSet testData = testAndTrain.getTest();
 
